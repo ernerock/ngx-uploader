@@ -1,6 +1,6 @@
 {
   "name": "ngx-upload-steroids",
-  "version": "3.1.4",
+  "version": "3.1.5",
   "description": "Angular 2+ File Uploader",
   "main": "bundles/ngx-uploader.umd.js",
   "module": "index.js",
