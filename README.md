@@ -6,14 +6,14 @@
 
 Angular 2+ File Uploader fork from https://github.com/jkuri/ngx-uploader
 
-
+## Under Development
 <!--
 http://ngx-uploader.com
 
 **This module has been completely rewritten from scratch with the version `3.0.0`.**
 
 If you are looking for documentation for version prior to `3.0.0`, please check [2.x.x](https://github.com/jkuri/ngx-uploader/tree/2.x.x) branch.
--->
+
 ## Installation
 
 
