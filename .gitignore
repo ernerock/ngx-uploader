@@ -9,4 +9,5 @@ lib/
 .idea/ngx-uploader.iml
 .idea/vcs.xml
 .idea/workspace.xml
+.idea/deployment.xml
 .idea/
