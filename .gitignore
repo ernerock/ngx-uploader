@@ -5,3 +5,8 @@ node_modules/
 lib/
 *.ngsummary.json
 *.ngfactory.ts
+.idea/modules.xml
+.idea/ngx-uploader.iml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/
