@@ -1,15 +1,26 @@
+<!--
+
 # ngx-uploader
 
-Angular 2+ File Uploader
+-->
 
+Angular 2+ File Uploader fork from https://github.com/jkuri/ngx-uploader
+
+
+<!--
 http://ngx-uploader.com
 
 **This module has been completely rewritten from scratch with the version `3.0.0`.**
 
 If you are looking for documentation for version prior to `3.0.0`, please check [2.x.x](https://github.com/jkuri/ngx-uploader/tree/2.x.x) branch.
-
+-->
 ## Installation
 
+
+```
+npm i ngx-upload-steroids
+```
+<!--
 1. Add `ngx-uploader` module as dependency to your project.
 
 ```
@@ -174,7 +185,7 @@ For whole template code please check [here](https://github.com/jkuri/ngx-uploade
   Start Upload
 </button>
 ```
-
+-->
 ### LICENCE
 
 MIT
