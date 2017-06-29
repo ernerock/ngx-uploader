@@ -1,6 +1,7 @@
 {
-  "name": "ngx-uploader",
-  "version": "3.1.3",
+  "name": "ngx-upload-steroids",
+  "version": "3.1.4",
+  "description": "Angular 2+ File Uploader",
   "main": "bundles/ngx-uploader.umd.js",
   "module": "index.js",
   "esnext": "index.js",
@@ -14,18 +15,6 @@
     "clean": "rimraf dist ./**/*.ngsummary.*",
     "prepublish": "ngc -p tsconfig.bundle.json && webpack --config webpack.dist.js -p"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jkuri/ngx-uploader.git"
-  },
-  "authors": [
-    "Jan Kuri <jkuri88@gmail.com>"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jkuri/ngx-uploader/issues"
-  },
-  "homepage": "https://github.com/jkuri/ngx-uploader#readme",
   "devDependencies": {
     "@angular/animations": "^4.1.1",
     "@angular/common": "^4.1.1",
@@ -77,12 +66,25 @@
     "style-loader": "^0.17.0",
     "to-string-loader": "^1.1.5",
     "ts-node": "^3.0.4",
-    "typescript": "^2.3.2",
+    "typescript": "2.3.4",
     "webpack": "^2.5.0",
     "webpack-dev-server": "^2.4.5",
     "webpack-dll-bundles-plugin": "^1.0.0-beta.5",
     "webpack-merge": "^4.1.0",
     "webpack-node-externals": "^1.6.0",
     "zone.js": "^0.8.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ernerock/ngx-uploader.git"
+  },
+  "keywords": [
+    "ngx-uploader"
+  ],
+  "author": "Ernesto del Frade <ernesto@delfrade.com> (http://delfrade.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ernerock/ngx-uploader/issues"
+  },
+  "homepage": "https://github.com/ernerock/ngx-uploader#readme"
 }

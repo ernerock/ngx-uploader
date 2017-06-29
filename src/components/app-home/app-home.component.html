@@ -32,6 +32,9 @@
             <input type="file" ngFileSelect (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput" multiple>
             or choose file(s)
           </label>
+          <button type="button" class="start-upload-btn" (click)="clearAll()">
+            Clear All
+          </button>
         </div>
         <div class="column is-10 is-offset-1">
           <div class="columns">

@@ -37,12 +37,12 @@ export interface UploadFile {
 }
 
 export interface UploadOutput {
-  type: 'addedToQueue' | 'allAddedToQueue' | 'uploading' | 'done' | 'removed' | 'start' | 'cancelled' | 'dragOver' | 'dragOut' | 'drop';
+  type: 'addedToQueue' | 'allAddedToQueue' | 'uploading' | 'done' | 'removed' | 'start' | 'cancelled' | 'dragOver' | 'dragOut' | 'drop' | 'clear' | 'clearAll';
   file?: UploadFile;
 }
 
 export interface UploadInput {
-  type: 'uploadAll' | 'uploadFile' | 'cancel' | 'cancelAll';
+  type: 'uploadAll' | 'uploadFile' | 'cancel' | 'cancelAll'| 'clear' | 'clearAll';
   url?: string;
   method?: string;
   id?: string;
@@ -161,6 +161,18 @@ export class NgUploaderService {
             this.serviceEvents.emit({ type: 'cancelled', file: upload.file });
           });
         break;
+        case 'clear':{
+          const id = event.id || null;
+          if (!id) {
+            return;
+          }
+          // this.serviceEvents.emit({ type: 'clear', file: id });
+        }
+        break;
+        case 'clearAll':{
+          console.log("CLEARING ALL: ", this.files);
+          this.serviceEvents.emit({ type: 'clearAll' });
+        }
       }
     });
   }
