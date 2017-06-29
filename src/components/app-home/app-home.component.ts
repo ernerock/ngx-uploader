@@ -34,17 +34,7 @@ export class AppHomeComponent {
     console.log(output);
 
     if (output.type === 'allAddedToQueue') {
-      if (this.formData.autoUpload) {
-        const event: UploadInput = {
-          type: 'uploadAll',
-          url: '/upload',
-          method: 'POST',
-          data: { foo: 'bar' },
-          concurrency: this.formData.concurrency
-        };
-
-        this.uploadInput.emit(event);
-      }
+      this.files = [output.file];
     } else if (output.type === 'addedToQueue') {
       this.files.push(output.file);
     } else if (output.type === 'uploading') {
@@ -64,7 +54,7 @@ export class AppHomeComponent {
   startUpload(): void {
     const event: UploadInput = {
       type: 'uploadAll',
-      url: 'http://ngx-uploader.com/upload',
+      url: 'http://localhost:4900/upload',
       method: 'POST',
       data: { foo: 'bar' },
       concurrency: this.formData.concurrency
@@ -75,5 +65,8 @@ export class AppHomeComponent {
 
   cancelUpload(id: string): void {
     this.uploadInput.emit({ type: 'cancel', id: id });
+  }
+  clearAll(): void {
+    this.uploadInput.emit({ type: 'clearAll' });
   }
 }
